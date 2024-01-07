@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { headerLinks } from '@/constants';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { headerLinks } from "@/constants";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavItems = () => {
   const pathname = usePathname();
@@ -16,15 +16,14 @@ const NavItems = () => {
           <li
             key={link.route}
             className={`${
-              isActive && 'text-primary-500'
-            } flex-center p-medium-16 whitespace-nowrap`}
-          >
+              isActive && "text-primary-500"
+            } flex-center p-medium-16 whitespace-nowrap`}>
             <Link href={link.route}>{link.label}</Link>
           </li>
-        )
+        );
       })}
     </ul>
-  )
-}
+  );
+};
 
-export default NavItems
+export default NavItems;
