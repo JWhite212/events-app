@@ -1,4 +1,6 @@
+import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from "next";
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -9,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fullstack Event App",
+  title: "Events Maximum",
   description: "A fullstack event app built with Next.js and Prisma.",
   icons: { icon: "/assets/images/logo.svg" },
 };
@@ -20,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={poppins.variable}>{children}</body>
     </html>
+    </ClerkProvider>
   );
 }
