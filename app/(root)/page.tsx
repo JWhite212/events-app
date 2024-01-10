@@ -38,8 +38,9 @@ export default function Home() {
           Trusted by <br /> Thousands of events.
         </h2>
 
-        <div className="flex w-full flex-col gap-5 md:flex-row">Search
-        CatagoryFilter</div>
+        <div className="flex w-full flex-col gap-5 md:flex-row">
+          Search CatagoryFilter
+        </div>
       </section>
     </>
   );
