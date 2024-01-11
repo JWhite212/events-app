@@ -2,13 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import
-	{
-		Form,
-		FormControl,
-		FormField,
-		FormItem,
-		FormMessage,
-	} from "@/components/ui/form";
+  {
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormMessage,
+  } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { eventDefaultValues } from "@/constants";
 import { eventFormSchema } from "@/lib/validator";
@@ -67,7 +67,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
               <FormItem className="w-full">
                 <FormControl>
                   <Dropdown
-                    onChangeHandler={FileSystemFileHandle.onChange}
+                    onChangeHandler={field.onChange}
                     value={field.value}
                   />
                 </FormControl>
