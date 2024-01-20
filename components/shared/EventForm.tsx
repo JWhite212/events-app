@@ -72,7 +72,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                   />
                 </FormControl>
                 This is your public display name.
-                <FormMessage />
+                <FormMessage/>
               </FormItem>
             )}
           />
